@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +30,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav>
+          <div  className="m-4 space-x-4">
+          <Link href={'/project'}><Button>project</Button></Link>
+          <Link href={'/'}><Button>main</Button></Link>
+          <Link href={'/info'}><Button>info</Button></Link>
+          <strong className="ml-20">Кременчутьська Гімназія №12 8-Г класс Коваленко Андрій</strong>
+          </div>
+        </nav>
         {children}
       </body>
     </html>

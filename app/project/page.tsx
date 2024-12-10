@@ -4,7 +4,7 @@ export default function page() {
   return (
     <>
       <div className="bg-gray-100 text-gray-900 font-sans p-8">
-        <h1 className="text-3xl font-bold text-center mb-8">Популярні проекти, пов'язані з GNU, FOSS та FSF</h1>
+        <h1 className="text-3xl font-bold text-center mb-8">Популярні проекти, пов`язані з GNU, FOSS та FSF</h1>
         <p className="text-lg text-center mb-8">
           Ось три з найпопулярніших проектів, які мають великий вплив на світ вільного програмного забезпечення.
         </p>
